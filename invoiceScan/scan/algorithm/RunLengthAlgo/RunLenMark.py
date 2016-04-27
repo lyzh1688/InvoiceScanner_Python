@@ -1,3 +1,4 @@
+__author__ = 'Yuezhi.Liu'
 class RunLenMark(object):
     def __init__(self,start,end,y,flag,isSet = False):
         self.start = start;

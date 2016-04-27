@@ -1,4 +1,5 @@
 #coding=utf-8
+__author__ = 'Yuezhi.Liu'
 import sys
 sys.path.append("..")
 from scan.algorithm import ScanAction as baseAction

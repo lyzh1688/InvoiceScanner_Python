@@ -1,3 +1,5 @@
+__author__ = 'Yuezhi.Liu'
+
 import cv2 as cv
 
 class ExternalRect(object):
@@ -82,7 +84,7 @@ class ExternalRect(object):
         for group in groupidList:
             externalRect = ExternalRect()
             externalRectDict[group] = externalRect
-
+        '''
         srcTestImg = cv.imread('C:/Project/invoiceScan/pic/A/1.1500007-r.png')
         for i in range(len(runLenSet)):
             for item in runLenSet[i]['RLRowList']:
@@ -98,6 +100,7 @@ class ExternalRect(object):
                     cv.line(srcTestImg,(item.start,item.y),(item.end,item.y),(255,0,0),1)
 
         cv.imshow('runlen',srcTestImg)
+        '''
         for i in range(len(runLenSet)):
             for item in runLenSet[i]['RLRowList']:
                 if externalRectDict[item.group].left > item.start or externalRectDict[item.group].left == -1:

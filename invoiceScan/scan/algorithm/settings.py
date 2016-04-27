@@ -1,7 +1,10 @@
+__author__ = 'Yuezhi.Liu'
 RUN_LEN_THRESHOLD = \
 {
     'DEFAULT':{
             'GRAY_THRESH':190,
+            'BLOCK_SIZE':51,
+            'MINUS_PARAM':10,
             #filer the vertical and horizantal line
             'MaxRLWidth':10,
             'MaxRLHeight':30,

@@ -1,3 +1,4 @@
+__author__ = 'Yuezhi.Liu'
 import sys
 sys.path.append("..")
 import RunLenMark
